@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.titulo {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-image: url(hutao.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+.circle-item {
+	width: 80px;
+	height: 80px;
+	display: grid;
+	place-items: center;
+	text-transform: uppercase;
+	font-size: 1.75rem;
+	border: 2px solid white;
+	border-radius: 50%;
+    color: white;
+    text-align: center;
+		width: 60px;
+		height: 60px;
+		font-size: 1.3rem;
+
+}
+
+.date {
+	display: grid;
+	grid-template-columns: repeat(3, 80px);
+	grid-column-gap: 10px;
+    place-items: center;
+    margin-left: 500px;
+}
+
+.talent {
+	padding: 10px;
+}
+.dj-title {
+	padding: 2px 5px;
+	text-transform: uppercase;
+	background-color: var(--purple);
+	color:white;
+	letter-spacing: 2px;
+	width: min-content;
+	margin: 0 auto;
+}
+.dj-list {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(
+		min-content,
+		20px,
+		min-content,
+		20px,
+		min-content
+	);
+	grid-auto-flow: column;
+}
+.dj-list li {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: 0 5px;
+	letter-spacing: 2px;
+    color: white;
+}
+
+footer {
+	padding: 10px;
+}
+.tickets {
+	padding: 5px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: white;
+    text-align: center;
+}
+.venue {
+	padding: 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.venue h3,
+.venue p {
+	letter-spacing: 2px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+	.poster {
+		height: 100vh;
+		background-position-y: 0px;
+	}
+
+	.info header h3 {
+		font-size: 1.4rem;
+	}
+
+
+	}
+	.circle-item {
+		width: 60px;
+		height: 60px;
+		font-size: 1.3rem;
+	}
+	.dj-title,
+	.tickets,
+	.venue {
+		font-size: 0.9rem;
+	}
+	.dj-list li {
+		font-size: 1.2rem;
+	}
